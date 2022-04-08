@@ -4,6 +4,8 @@
 #add names of products to data so output can be assigned to real product names?
 # add more data about search?
 
+#notes: 46 and bee caused problems?
+
 
 from ast import Constant
 import requests # web scraping library
@@ -32,7 +34,7 @@ websites_data = {}
 nextLine = websites.readline()
 # start scraper loop
 counter4printing = 1;
-while nextLine != None:
+while nextLine != "":
     print(counter4printing, "WHILE LOOP--------------------------")
     text_object = requests.get(nextLine)
     text = text_object.text
