@@ -9,9 +9,6 @@
 #notes: 46 and bee caused problems?
 
 
-from ast import Constant
-from pickle import TRUE
-from idna import check_label
 import requests # web scraping library
 import re
 import sys
