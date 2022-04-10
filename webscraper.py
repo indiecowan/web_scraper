@@ -20,7 +20,6 @@ import string
 def clean_out_tags(text):
     tag = ".*</head>"
     text = re.sub(tag, "", text)
-    # print(text[:1000])
     return text
 
 #def search_a_website()
@@ -36,7 +35,8 @@ websites = open("websites2search.txt", "r")
 website_data = open("websitedata.txt", "w")
 
 # save first url
-nextLine = websites.readline()
+nextLine = websites.readline().strip() #can strip just \n
+
 # start scraper loop
 counter4printing = 1;
 while nextLine != "":
